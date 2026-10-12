@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* ==========================================
+   1. Bảng cơ bản (border & border-collapse)
+   ========================================== */
+.basic-table {
+    border-collapse: collapse; /* Gộp các đường viền kép */
+}
+
+.basic-table, 
+.basic-table th, 
+.basic-table td {
+    border: 1px solid black; /* Đường viền 1px đen liền mạch */
+}
+
+/* ==========================================
+   2. Bảng định kiểu đầy đủ (Width, Align, Padding, Màu sắc)
+   ========================================== */
+.styled-table {
+    width: 100%;               /* Chiều rộng 100% phần tử chứa */
+    border-collapse: collapse; /* Bỏ đường viền kép */
+    margin-top: 10px;
+}
+
+.styled-table, 
+.styled-table th, 
+.styled-table td {
+    border: 1px solid #ddd;   /* Đường viền xám nhạt */
+}
+
+/* Tiêu đề bảng (th) */
+.styled-table th {
+    height: 50px;              /* Chiều cao tối thiểu 50px */
+    text-align: left;          /* Căn trái chữ */
+    background-color: #333;    /* Nền tối */
+    color: white;              /* Chữ trắng */
+    padding: 15px;             /* Khoảng cách bên trong ô 15px */
+}
+
+/* Ô dữ liệu (td) */
+.styled-table td {
+    height: 60px;              /* Thiết lập chiều cao */
+    vertical-align: middle;    /* Căn giữa theo chiều dọc */
+    background-color: #f2f2f2; /* Nền xám nhạt */
+    color: #333;               /* Chữ tối */
+    padding: 15px;             /* Khoảng cách bên trong ô 15px */
+}
+
+/* Hiệu ứng di chuột vào hàng */
+.styled-table tr:hover {
+    background-color: #e6e6e6;
+}
